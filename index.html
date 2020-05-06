@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="https://static.thenounproject.com/png/447773-200.png">
+		<script>
+			var Karambits = 0;
+			var AutoClicks = 0;
+			var AmmountClick = 1;
+		</script>
+		<title>0 Karambits</title>
+		<style>
+			img{
+				cursor: pointer;
+			}
+			div{
+				text-align: center;
+			}
+			button{
+				padding: 15px 20px;
+				border: 0px;
+				background-color: green;
+				color: white;
+				cursor: pointer;
+			}
+			button:hover{
+				opacity: .7;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="https://pngimage.net/wp-content/uploads/2018/06/karambit-png-7.png" onclick="add()" width="256" height="256">
+			<p id="karambit_count">Karambits: 0</p>
+			<button onclick="buy1()">Buy 1 Auto Clicker (20 Karambits)</button>
+			<button onclick="buy10()">Buy 10 Auto Clickers (150 Karambits)</button>
+			<p id="own">You Own 0 Auto Clickers</p>
+			<button onclick="buyClick()">+1 Karambits Per Click (10000 Karambits)</button>
+			<script src="source_script.js">
+			</script>
+		</div>
+	</body>
+</html>
