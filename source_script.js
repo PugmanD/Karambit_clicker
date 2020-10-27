@@ -2,27 +2,27 @@ function add(){
 	if (Karambits == 20000){
 		window.alert("You have won the game! THX for playing")
 	}
-	Karambits = Karambits + AmmountClick;
+	Karambits += AmmountClick;
 	document.title = Karambits + " Karambits";
 	document.getElementById('karambit_count').innerHTML = "Karambits: " + Karambits;
 }
 function buy1(){
 	if (Karambits >= 20){
-		Karambits = Karambits - 20;
-		AutoClicks = AutoClicks + 1;
+		Karambits -= 20;
+		AutoClicks += 1;
 		update();
 	}
 }
 function buy10(){
 	if (Karambits >= 150){
-		Karambits = Karambits - 150;
-		AutoClicks = AutoClicks + 10;
+		Karambits -= 150;
+		AutoClicks += 10;
 		update();
 	}
 }
 function GetAutoClicks(){
 	if (AutoClicks > 0){
-		Karambits = Karambits + AutoClicks;
+		Karambits += AutoClicks;
 	}
 }
 setInterval(GetAutoClicks, 1000);
@@ -34,7 +34,7 @@ function update(){
 setInterval(update, 1);
 function buyClick(){
 	if (Karambits >= 10000){
-		Karambits = Karambits - 10000
-		AmmountClick = AmmountClick + 1;
+		Karambits -= 10000
+		AmmountClick += 1;
 	}
 }
